@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black_fff2f2f2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_fra_ask_title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/yellow_login"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="@dimen/dp290"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/cg_white"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_14"
+            android:paddingLeft="@dimen/dp5"
+            android:hint="您要买点什么">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_seatch"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp30"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:text="搜索"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_19" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.fenboshi.fboshi.dialog.MyGridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/h_10dp"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginEnd="@dimen/h_10dp"
+                android:background="@color/color_black_fff2f2f2"
+                android:horizontalSpacing="@dimen/h_10dp"
+                android:numColumns="2"
+                android:verticalSpacing="@dimen/dp10"
+                tools:listitem="@layout/item_bee_home_shop" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

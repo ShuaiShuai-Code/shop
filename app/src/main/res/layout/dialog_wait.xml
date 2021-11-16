@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    android:gravity="center"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_dialog_white_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#00000000"
+        android:gravity="center">
+        <ProgressBar
+            android:id="@+id/img_gif"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"/>
+        <TextView style="@style/text_big_white"
+            android:text="@string/loading"
+            android:textColor="@color/color_666666"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/lin_dialog_white"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="#80000000"-->
+<!--        android:gravity="center">-->
+<!--        <ImageView-->
+<!--            android:id="@+id/img_gif2"-->
+<!--            android:layout_width="@dimen/h_50dp"-->
+<!--            android:layout_height="@dimen/h_50dp"/>-->
+<!--        <TextView style="@style/text_big_white"-->
+<!--            android:text="@string/loading"-->
+<!--            android:layout_marginTop="5dp"/>-->
+<!--    </LinearLayout>-->
+</LinearLayout>

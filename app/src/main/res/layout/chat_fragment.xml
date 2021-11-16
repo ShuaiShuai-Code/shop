@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black_fff2f2f2"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_null"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp200"
+                android:gravity="center"
+                android:text="购物车空空如也"
+                android:visibility="visible" />
+
+            <com.fenboshi.fboshi.dialog.MyGridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/h_10dp"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginEnd="@dimen/h_10dp"
+                android:layout_marginBottom="@dimen/dp45"
+                android:background="@color/color_black_fff2f2f2"
+                android:horizontalSpacing="@dimen/h_10dp"
+                android:numColumns="1"
+                android:verticalSpacing="@dimen/dp10"
+                android:visibility="gone"
+                tools:listitem="@layout/item_bee_home_shop" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp49"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp5"
+        android:background="@drawable/bg_round_color_white"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_f2f2f2"/>
+            <TextView
+                android:id="@+id/tv_id_num3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@+id/tv_min"
+                android:gravity="center"
+                android:text="共1件,"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_min"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="实付金额："
+                android:textColor="@color/main_header_color"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/tv_zhifu_money"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/tv_min"
+                android:gravity="center"
+                android:text="￥00.00"
+                android:textColor="@color/color_FF5424"
+                android:textSize="@dimen/text_size_17" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:background="@drawable/background_orger_pay"
+            android:gravity="center"
+            android:text="提交订单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17"></TextView>
+    </LinearLayout>
+</RelativeLayout>

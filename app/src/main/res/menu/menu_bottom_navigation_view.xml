@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/questionFragment"
+        android:enabled="true"
+        android:icon="@drawable/main_01"
+        android:title="首页"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/learnFragment"
+        android:enabled="true"
+        android:icon="@drawable/main_02"
+        android:title="商城"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/lookFragment"
+        android:enabled="true"
+        android:icon="@drawable/main_03"
+        android:title="9.9精选"
+        android:tooltipText="14sp"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/chatFragment"
+        android:enabled="true"
+        android:icon="@drawable/main_05"
+        android:title="购物车"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mineFragment"
+        android:enabled="true"
+        android:icon="@drawable/main_04"
+        android:title="我的"
+        app:showAsAction="ifRoom" />
+
+</menu>
